@@ -1,0 +1,693 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>Wirtschaftsprüfer · Steuerberater · Rechtsanwälte Dr. Senger und Senger - Leipzig - Partnerschaft mbB | Leipzig — Ihre Kanzlei</title>
+<meta name="description" content="Wirtschaftsprüfer · Steuerberater · Rechtsanwälte Dr. Senger und Senger - Leipzig - Partnerschaft mbB in Leipzig — Steuererklärung, Buchhaltung, Jahresabschluss — und Beratung, die bares Geld spart. Kanzlei in Leipzig.">
+<meta property="og:title" content="Wirtschaftsprüfer · Steuerberater · Rechtsanwälte Dr. Senger und Senger - Leipzig - Partnerschaft mbB | Leipzig">
+<meta property="og:image" content="https://images.unsplash.com/photo-1588776814546-1ffcf47267a5?w=800&h=1000&fit=crop&q=80">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>⚖️</text></svg>">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400&family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+/* ═══════════════════════════════════════════════
+   SYSTEMS™ ANWALT Template v1.0
+   Authority · Trust · Discretion · Premium
+   3D Scales · Client Portal · Practice Areas
+   ═══════════════════════════════════════════════ */
+:root{
+  --p:#0F172A;--p-rgb:15,23,42;
+  --navy:#1E293B;--navy-rgb:30,41,59;
+  --gold:#B8860B;--gold-rgb:184,134,11;
+  --gold-l:#D4A843;--gold-l-rgb:212,168,67;
+  --bg:#FFFFFF;--bg2:#FAFAF9;--bg3:#F5F5F4;
+  --tx:#1E293B;--tx2:#64748B;--bd:#E2E8F0;
+  --fd:"Playfair Display",serif;--fb:"DM Sans",sans-serif;
+  --r:12px;--sh:0 4px 24px rgba(15,23,42,.06);--shh:0 16px 48px rgba(15,23,42,.1);
+}
+
+*{margin:0;padding:0;box-sizing:border-box}html{scroll-behavior:smooth}
+body{background:var(--bg);color:var(--tx);font-family:var(--fb);overflow-x:hidden;-webkit-font-smoothing:antialiased}
+a{text-decoration:none;color:inherit}::selection{background:rgba(var(--gold-rgb),.15)}
+
+/* ═══ LOADER ═══ */
+.loader{position:fixed;inset:0;z-index:10001;background:#fff;display:flex;align-items:center;justify-content:center;flex-direction:column;gap:24px;transition:opacity .5s,visibility .5s}
+.loader.done{opacity:0;visibility:hidden;pointer-events:none}
+.loader-icon{font-size:2.5rem;animation:scalePulse 1.2s ease infinite}
+@keyframes scalePulse{0%,100%{transform:scale(1)}50%{transform:scale(1.15)}}
+.loader-bar{width:140px;height:3px;background:var(--bg3);border-radius:3px;overflow:hidden}
+.loader-bar::after{content:"";display:block;width:0;height:100%;background:var(--gold);border-radius:3px;animation:loadBar 1.2s ease forwards}
+@keyframes loadBar{to{width:100%}}
+
+/* ═══ NAV ═══ */
+nav{position:fixed;top:0;left:0;right:0;z-index:100;padding:16px 0;transition:all .4s}
+nav.sc{background:rgba(255,255,255,.95);backdrop-filter:blur(20px) saturate(1.5);border-bottom:1px solid var(--bd);box-shadow:0 1px 12px rgba(0,0,0,.04)}
+.c{max-width:1200px;margin:0 auto;padding:0 24px}
+.ni{display:flex;justify-content:space-between;align-items:center}
+.nb{font-family:var(--fd);font-size:1.15rem;font-weight:700;display:flex;align-items:center;gap:10px;color:var(--navy)}
+.nb .icon{width:34px;height:34px;background:var(--navy);border-radius:8px;display:flex;align-items:center;justify-content:center;color:var(--gold-l);font-size:.85rem}
+.nr{display:flex;gap:28px;align-items:center}
+.nr a{font-size:.82rem;color:var(--tx2);font-weight:500;transition:color .3s;letter-spacing:.02em}.nr a:hover{color:var(--gold)}
+.nav-cta{padding:10px 24px;background:var(--navy);color:var(--gold-l);font-weight:600;font-size:.82rem;border-radius:8px;transition:all .3s;border:1px solid rgba(var(--gold-rgb),.3)}
+.nav-cta:hover{background:#0F172A;transform:translateY(-1px);box-shadow:0 4px 20px rgba(var(--navy-rgb),.3)}
+
+/* Hamburger */
+.mm-btn{display:none;width:40px;height:40px;border:1px solid var(--bd);border-radius:10px;background:#fff;cursor:pointer;flex-direction:column;align-items:center;justify-content:center;gap:5px}
+.mm-btn span{width:18px;height:2px;background:var(--tx);border-radius:2px;transition:all .3s}
+.mm{position:fixed;top:0;right:-100%;width:min(360px,85vw);height:100vh;background:#fff;border-left:1px solid var(--bd);z-index:99;transition:right .4s;padding:80px 32px 40px;display:flex;flex-direction:column;gap:20px}
+.mm.open{right:0}
+.mm a{font-family:var(--fd);font-size:1.2rem;font-weight:600;color:var(--tx);padding:12px 0;border-bottom:1px solid var(--bg3);transition:color .3s}.mm a:hover{color:var(--gold)}
+.mm-ov{position:fixed;inset:0;background:rgba(0,0,0,.3);backdrop-filter:blur(4px);z-index:98;opacity:0;visibility:hidden;transition:all .3s}.mm-ov.open{opacity:1;visibility:visible}
+@media(max-width:768px){.nr{display:none}.mm-btn{display:flex}}
+
+/* ═══ CONSULTATION BANNER ═══ */
+.consult-banner{background:var(--navy);color:#fff;text-align:center;padding:10px 20px;font-size:.82rem;font-weight:500;display:flex;align-items:center;justify-content:center;gap:12px;position:fixed;top:0;left:0;right:0;z-index:101}
+.consult-banner a{color:var(--gold-l);font-weight:700;text-decoration:underline}
+.consult-banner+nav{top:38px}
+.consult-banner+nav.sc{top:38px}
+
+/* ═══ HERO ═══ */
+.hero{min-height:100vh;display:flex;align-items:center;position:relative;background:linear-gradient(135deg,#FAFAF9 0%,#F5F5F4 50%,#E7E5E4 100%);overflow:hidden;padding:140px 0 80px}
+.hero::before{content:"";position:absolute;top:0;right:0;width:50%;height:100%;background:var(--navy);clip-path:polygon(15% 0,100% 0,100% 100%,0% 100%);opacity:.03}
+.hero-grid{display:grid;grid-template-columns:1fr 1fr;gap:64px;align-items:center}
+.hero-content{position:relative;z-index:2}
+.hero-badge{display:inline-flex;align-items:center;gap:8px;padding:6px 16px;background:rgba(var(--gold-rgb),.08);border:1px solid rgba(var(--gold-rgb),.2);border-radius:100px;font-size:.75rem;color:var(--gold);font-weight:600;margin-bottom:28px;text-transform:uppercase;letter-spacing:.08em}
+.hero h1{font-family:var(--fd);font-size:clamp(2.2rem,4.5vw,3.4rem);font-weight:700;line-height:1.15;letter-spacing:-.02em;color:var(--navy);margin-bottom:20px}
+.hero h1 em{font-style:italic;color:var(--gold)}
+.hero-desc{font-size:1rem;color:var(--tx2);line-height:1.8;max-width:480px;margin-bottom:36px}
+.hero-btns{display:flex;gap:12px;flex-wrap:wrap;margin-bottom:44px}
+.btn{padding:14px 32px;font-weight:600;font-size:.88rem;border-radius:8px;transition:all .3s;border:none;cursor:pointer;display:inline-flex;align-items:center;gap:8px;font-family:var(--fb)}
+.btn-p{background:var(--navy);color:var(--gold-l);box-shadow:0 4px 16px rgba(var(--navy-rgb),.2);border:1px solid rgba(var(--gold-rgb),.2)}.btn-p:hover{background:#0F172A;transform:translateY(-2px);box-shadow:0 8px 28px rgba(var(--navy-rgb),.3)}
+.btn-s{background:#fff;border:1px solid var(--bd);color:var(--tx)}.btn-s:hover{border-color:var(--gold);color:var(--gold)}
+.hero-trust{display:flex;gap:32px;flex-wrap:wrap}
+.ht-item{display:flex;align-items:center;gap:10px}
+.ht-item .num{font-family:var(--fd);font-size:1.5rem;font-weight:700;color:var(--navy)}
+.ht-item .lab{font-size:.75rem;color:var(--tx2);line-height:1.3}
+
+/* 3D Scales of Justice */
+.hero-visual{position:relative;display:flex;align-items:center;justify-content:center;padding:40px}
+.icon-3d{width:260px;height:300px;position:relative;animation:iconFloat 7s ease-in-out infinite}
+@keyframes iconFloat{0%,100%{transform:translateY(0)}50%{transform:translateY(-16px)}}
+.icon-glow{position:absolute;width:200px;height:200px;top:50%;left:50%;transform:translate(-50%,-50%);background:radial-gradient(circle,rgba(var(--gold-rgb),.12) 0%,transparent 70%);border-radius:50%;animation:gPulse 4s ease infinite}
+@keyframes gPulse{0%,100%{transform:translate(-50%,-50%) scale(1);opacity:.5}50%{transform:translate(-50%,-50%) scale(1.15);opacity:.8}}
+
+/* Case Status Card floating */
+.case-card{position:absolute;right:-40px;top:30px;width:260px;background:#fff;border:1px solid var(--bd);border-radius:14px;padding:20px;box-shadow:var(--shh);animation:floatCase 6s ease-in-out infinite;animation-delay:-2s}
+@keyframes floatCase{0%,100%{transform:translateY(0)}50%{transform:translateY(-10px)}}
+.case-card h4{font-family:var(--fd);font-size:.8rem;font-weight:700;color:var(--navy);margin-bottom:12px;display:flex;align-items:center;gap:8px}
+.case-card h4 .dot{width:8px;height:8px;background:var(--gold);border-radius:50%}
+.case-items{display:flex;flex-direction:column;gap:8px}
+.case-item{display:flex;justify-content:space-between;align-items:center;padding:8px 12px;background:var(--bg2);border-radius:8px;font-size:.75rem}
+.case-item .label{color:var(--tx2)}.case-item .val{font-weight:600;color:var(--navy)}
+.case-item .status-badge{font-size:.65rem;padding:2px 8px;border-radius:100px;font-weight:600}
+.status-active{background:rgba(var(--gold-rgb),.1);color:var(--gold)}
+.status-done{background:rgba(16,185,129,.1);color:#10B981}
+
+/* Credential float */
+.cred-float{position:absolute;left:-30px;bottom:40px;padding:12px 18px;background:#fff;border:1px solid var(--bd);border-radius:12px;box-shadow:var(--shh);display:flex;align-items:center;gap:10px;animation:floatCred 5s ease-in-out infinite;animation-delay:-1s;font-size:.78rem}
+@keyframes floatCred{0%,100%{transform:translateY(0) rotate(0)}50%{transform:translateY(-8px) rotate(1deg)}}
+.cred-float .icon{font-size:1.2rem}
+.cred-float strong{color:var(--navy)}
+
+/* ═══ SECTIONS ═══ */
+.sec{padding:100px 0}
+.sh{text-align:center;margin-bottom:64px}
+.sh-l{font-size:.75rem;text-transform:uppercase;letter-spacing:.12em;color:var(--gold);font-weight:600;margin-bottom:12px}
+.sh-t{font-family:var(--fd);font-size:clamp(1.8rem,3.5vw,2.6rem);font-weight:700;color:var(--navy);line-height:1.2}
+.sh-t em{font-style:italic;color:var(--gold)}
+.sh-d{font-size:.95rem;color:var(--tx2);max-width:600px;margin:16px auto 0;line-height:1.7}
+
+/* ═══ PRACTICE AREAS (Fachgebiete) ═══ */
+.areas-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:24px}
+.area-card{background:#fff;border:1px solid var(--bd);border-radius:var(--r);padding:32px;transition:all .4s;cursor:default;position:relative;overflow:hidden}
+.area-card::before{content:"";position:absolute;top:0;left:0;width:4px;height:0;background:var(--gold);transition:height .4s}
+.area-card:hover::before{height:100%}
+.area-card:hover{border-color:rgba(var(--gold-rgb),.3);box-shadow:var(--sh);transform:translateY(-4px)}
+.area-icon{width:48px;height:48px;background:rgba(var(--gold-rgb),.08);border-radius:12px;display:flex;align-items:center;justify-content:center;font-size:1.4rem;margin-bottom:20px}
+.area-card h3{font-family:var(--fd);font-size:1.1rem;font-weight:700;color:var(--navy);margin-bottom:10px}
+.area-card p{font-size:.85rem;color:var(--tx2);line-height:1.7}
+
+/* ═══ SERVICES ═══ */
+.svc-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:20px}
+.sv{background:#fff;border:1px solid var(--bd);border-radius:var(--r);padding:28px;transition:all .4s;position:relative}
+.sv:hover{border-color:rgba(var(--gold-rgb),.3);box-shadow:var(--sh);transform:translateY(-3px)}
+.sv.ft{border-color:rgba(var(--gold-rgb),.4);background:rgba(var(--gold-rgb),.02)}
+.sv.ft::after{content:"Empfohlen";position:absolute;top:16px;right:16px;font-size:.65rem;background:var(--gold);color:#fff;padding:3px 10px;border-radius:100px;font-weight:600}
+.sv-ic{font-size:1.6rem;margin-bottom:16px}
+.sv h3{font-family:var(--fd);font-size:1rem;font-weight:700;color:var(--navy);margin-bottom:8px}
+.sv p{font-size:.82rem;color:var(--tx2);line-height:1.6}
+.sv-pr{font-weight:700;color:var(--gold);margin-top:12px}
+
+/* ═══ CLIENT PORTAL MOCKUP ═══ */
+.portal-sec{background:var(--navy);padding:100px 0;position:relative;overflow:hidden}
+.portal-sec::before{content:"";position:absolute;inset:0;background:url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='0.03'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E")}
+.portal-grid{display:grid;grid-template-columns:1fr 1.2fr;gap:64px;align-items:center}
+.portal-text{color:#fff}
+.portal-text .sh-l{color:var(--gold-l)}
+.portal-text h2{font-family:var(--fd);font-size:clamp(1.8rem,3vw,2.4rem);font-weight:700;color:#fff;line-height:1.2;margin-bottom:20px}
+.portal-text h2 em{color:var(--gold-l);font-style:italic}
+.portal-text p{color:rgba(255,255,255,.7);line-height:1.8;margin-bottom:28px}
+.portal-features{display:flex;flex-direction:column;gap:16px}
+.pf-item{display:flex;align-items:center;gap:12px;font-size:.88rem;color:rgba(255,255,255,.85)}
+.pf-item .check{width:24px;height:24px;background:rgba(var(--gold-rgb),.15);border-radius:6px;display:flex;align-items:center;justify-content:center;font-size:.7rem;color:var(--gold-l)}
+
+/* Portal Mockup UI */
+.portal-mock{background:#111827;border-radius:16px;border:1px solid rgba(255,255,255,.1);overflow:hidden;box-shadow:0 32px 64px rgba(0,0,0,.4)}
+.pm-topbar{display:flex;align-items:center;justify-content:space-between;padding:14px 20px;background:rgba(255,255,255,.03);border-bottom:1px solid rgba(255,255,255,.06)}
+.pm-topbar .logo{font-family:var(--fd);font-size:.8rem;font-weight:700;color:var(--gold-l)}
+.pm-topbar .user{display:flex;align-items:center;gap:8px;font-size:.72rem;color:rgba(255,255,255,.5)}
+.pm-topbar .avatar{width:24px;height:24px;background:var(--gold);border-radius:6px;display:flex;align-items:center;justify-content:center;font-size:.6rem;color:#fff}
+.pm-body{display:grid;grid-template-columns:180px 1fr;min-height:280px}
+.pm-sidebar{background:rgba(255,255,255,.02);border-right:1px solid rgba(255,255,255,.06);padding:16px 0}
+.pm-nav{display:flex;flex-direction:column}
+.pm-nav a{padding:10px 20px;font-size:.72rem;color:rgba(255,255,255,.4);transition:all .2s;display:flex;align-items:center;gap:8px;border-left:2px solid transparent}
+.pm-nav a.active{color:var(--gold-l);background:rgba(var(--gold-rgb),.05);border-left-color:var(--gold)}
+.pm-nav a:hover{color:rgba(255,255,255,.7)}
+.pm-content{padding:20px}
+.pm-content h3{font-family:var(--fd);font-size:.85rem;font-weight:700;color:#fff;margin-bottom:16px}
+
+/* Case Status in Portal */
+.pm-cases{display:flex;flex-direction:column;gap:10px}
+.pm-case{display:flex;align-items:center;justify-content:space-between;padding:12px 16px;background:rgba(255,255,255,.03);border:1px solid rgba(255,255,255,.06);border-radius:10px}
+.pm-case .info{display:flex;flex-direction:column;gap:2px}
+.pm-case .name{font-size:.78rem;font-weight:600;color:#fff}
+.pm-case .meta{font-size:.65rem;color:rgba(255,255,255,.4)}
+.pm-case .tag{font-size:.6rem;padding:3px 10px;border-radius:100px;font-weight:600}
+.tag-progress{background:rgba(var(--gold-rgb),.15);color:var(--gold-l)}
+.tag-review{background:rgba(59,130,246,.15);color:#60A5FA}
+.tag-closed{background:rgba(16,185,129,.15);color:#34D399}
+
+/* Document stats */
+.pm-stats{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:16px}
+.pm-stat{padding:12px;background:rgba(255,255,255,.03);border:1px solid rgba(255,255,255,.06);border-radius:8px;text-align:center}
+.pm-stat .num{font-family:var(--fd);font-size:1.1rem;font-weight:700;color:var(--gold-l)}
+.pm-stat .label{font-size:.6rem;color:rgba(255,255,255,.4);margin-top:2px}
+
+/* ═══ ABOUT ═══ */
+.about-grid{display:grid;grid-template-columns:1fr 1.2fr;gap:64px;align-items:center}
+.about-img{position:relative;border-radius:var(--r);overflow:hidden;aspect-ratio:4/5}
+.about-img img{width:100%;height:100%;object-fit:cover}
+.about-img::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,transparent 60%,rgba(var(--navy-rgb),.1))}
+.about-text h2{font-family:var(--fd);font-size:clamp(1.6rem,3vw,2.2rem);font-weight:700;color:var(--navy);margin-bottom:20px;line-height:1.2}
+.about-text h2 em{color:var(--gold);font-style:italic}
+.about-text p{color:var(--tx2);line-height:1.8;margin-bottom:16px}
+.about-stats{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:28px}
+.as-i{padding:16px;background:var(--bg2);border-radius:10px;text-align:center}
+.as-i b{display:block;font-family:var(--fd);font-size:1.2rem;color:var(--navy);margin-bottom:4px}
+.as-i span{font-size:.72rem;color:var(--tx2)}
+
+/* ═══ GALLERY ═══ */
+.gallery-bento{display:grid;grid-template-columns:repeat(4,1fr);grid-template-rows:auto auto;gap:16px}
+.gallery-item{position:relative;border-radius:var(--r);overflow:hidden;cursor:default}
+.gallery-item img{width:100%;height:100%;object-fit:cover;transition:transform .6s}
+.gallery-item:hover img{transform:scale(1.05)}
+.gallery-label{position:absolute;bottom:12px;left:12px;background:rgba(var(--navy-rgb),.85);backdrop-filter:blur(8px);color:#fff;font-size:.7rem;font-weight:600;padding:4px 12px;border-radius:6px}
+.gallery-item:nth-child(1){grid-column:span 2;grid-row:span 2;min-height:400px}
+.gallery-item:nth-child(2),.gallery-item:nth-child(3){min-height:190px}
+.gallery-item:nth-child(4){grid-column:span 2;min-height:190px}
+
+/* ═══ REVIEWS ═══ */
+.rv-top{text-align:center;padding:32px;background:#fff;border:1px solid var(--bd);border-radius:var(--r);margin-bottom:24px}
+.rv-badge{display:flex;flex-direction:column;gap:4px;align-items:center}
+.rv-badge .st{font-size:1.6rem;color:var(--gold)}
+.rv-badge b{font-family:var(--fd);font-size:2rem;color:var(--navy)}
+.rv-badge span{font-size:.82rem;color:var(--tx2)}
+
+/* ═══ CONTACT ═══ */
+.contact-grid{display:grid;grid-template-columns:1fr 1.2fr;gap:48px;align-items:start}
+.contact-card{background:#fff;border:1px solid var(--bd);border-radius:var(--r);padding:40px}
+.contact-card h3{font-family:var(--fd);font-size:1.3rem;font-weight:700;color:var(--navy);margin-bottom:24px}
+.cb{display:flex;align-items:center;gap:12px;padding:14px 20px;border-radius:10px;font-size:.88rem;font-weight:600;margin-bottom:12px;transition:all .3s}
+.cb.ph{background:var(--navy);color:var(--gold-l)}.cb.ph:hover{background:#0F172A}
+.cb.wa{background:#25D366;color:#fff}.cb.wa:hover{background:#1DA851}
+.cb.em{background:var(--bg2);color:var(--tx);border:1px solid var(--bd)}.cb.em:hover{border-color:var(--gold)}
+.ci{margin-top:24px}
+.ci .l{font-size:.72rem;text-transform:uppercase;letter-spacing:.08em;color:var(--tx2);margin-bottom:4px;margin-top:16px}
+.ci .v{font-size:.9rem;color:var(--navy);font-weight:500}
+.map-wrap{border-radius:var(--r);overflow:hidden;border:1px solid var(--bd);height:100%;min-height:400px}
+.map-wrap iframe{width:100%;height:100%;border:0}
+
+/* ═══ CTA BANNER ═══ */
+.cta-sec{background:var(--navy);padding:80px 0;text-align:center;position:relative;overflow:hidden}
+.cta-sec::before{content:"";position:absolute;top:-50%;right:-20%;width:400px;height:400px;background:radial-gradient(circle,rgba(var(--gold-rgb),.1),transparent);border-radius:50%}
+.cta-sec h2{font-family:var(--fd);font-size:clamp(1.6rem,3vw,2.4rem);font-weight:700;color:#fff;margin-bottom:16px}
+.cta-sec h2 em{color:var(--gold-l);font-style:italic}
+.cta-sec p{color:rgba(255,255,255,.6);margin-bottom:32px;max-width:500px;margin-left:auto;margin-right:auto}
+.cta-sec .btn-p{background:var(--gold);color:#fff;border:none}.cta-sec .btn-p:hover{background:var(--gold-l)}
+
+/* ═══ FOOTER ═══ */
+footer{background:var(--navy);color:rgba(255,255,255,.6);padding:64px 0 32px;border-top:1px solid rgba(255,255,255,.06)}
+.ft-grid{display:grid;grid-template-columns:2fr 1fr 1fr 1fr;gap:40px;margin-bottom:48px}
+.ft-col h4{font-family:var(--fd);font-size:.9rem;font-weight:700;color:#fff;margin-bottom:16px}
+.ft-col p,.ft-col a{font-size:.82rem;color:rgba(255,255,255,.5);line-height:1.8;display:block;transition:color .3s}
+.ft-col a:hover{color:var(--gold-l)}
+.ft-brand{font-family:var(--fd);font-size:1.2rem;font-weight:700;color:#fff;margin-bottom:12px;display:flex;align-items:center;gap:8px}
+.ft-brand .icon{width:28px;height:28px;background:rgba(var(--gold-rgb),.15);border-radius:6px;display:flex;align-items:center;justify-content:center;font-size:.75rem}
+.ft-bottom{display:flex;justify-content:space-between;align-items:center;padding-top:24px;border-top:1px solid rgba(255,255,255,.06);font-size:.72rem;color:rgba(255,255,255,.3)}
+.ft-social{display:flex;gap:12px}
+.ft-social a{width:32px;height:32px;background:rgba(255,255,255,.06);border-radius:8px;display:flex;align-items:center;justify-content:center;font-size:.85rem;transition:all .3s}
+.ft-social a:hover{background:rgba(var(--gold-rgb),.15);color:var(--gold-l)}
+
+/* ═══ REVEAL ANIMATION ═══ */
+.rv{opacity:0;transform:translateY(30px);transition:all .7s cubic-bezier(.22,1,.36,1)}
+.rv.vis{opacity:1;transform:none}
+.rv-d1{transition-delay:.1s}.rv-d2{transition-delay:.2s}.rv-d3{transition-delay:.3s}.rv-d4{transition-delay:.4s}
+
+/* ═══ RESPONSIVE ═══ */
+@media(max-width:1024px){
+  .hero-grid,.portal-grid,.about-grid,.contact-grid{grid-template-columns:1fr}
+  .hero-visual{display:none}
+  .ft-grid{grid-template-columns:1fr 1fr}
+}
+@media(max-width:768px){
+  .sec{padding:64px 0}
+  .hero{padding:120px 0 60px}
+  .areas-grid,.svc-grid{grid-template-columns:1fr}
+  .gallery-bento{grid-template-columns:1fr 1fr}.gallery-item:nth-child(1){grid-column:span 2;min-height:260px}.gallery-item:nth-child(4){grid-column:span 2}
+  .about-stats{grid-template-columns:repeat(3,1fr)}
+  .portal-grid{grid-template-columns:1fr}
+  .pm-body{grid-template-columns:1fr}.pm-sidebar{display:none}
+  .ft-grid{grid-template-columns:1fr}
+  .contact-grid{grid-template-columns:1fr}
+  .hero-trust{gap:16px}
+}
+
+.svc-card:hover,.sv:hover,.area-card:hover{transform:translateY(-6px) rotateX(2deg);transition:transform 0.4s cubic-bezier(0.33,1,0.68,1),box-shadow 0.4s}
+
+/* Image reveal mask effect */
+.gallery-item{clip-path:inset(0 0 0 0);transition:clip-path 0.8s cubic-bezier(0.33,1,0.68,1)}
+
+</style>
+
+<!-- GSAP CDN -->
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+
+    <style>
+    /* SYSTEMS v4 — Unique Color Override */
+    :root {
+      --accent: #0EA5E9 !important;
+      --accent-hover: #0284C7 !important;
+    }
+    /* Fix SVG icon sizing globally */
+    .cb svg, .contact-btn svg, .btn svg { width: 20px !important; height: 20px !important; flex-shrink: 0; }
+    .nav-cta svg { width: 16px !important; height: 16px !important; }
+    .ft-social svg { width: 14px !important; height: 14px !important; }
+    .review-stars svg { width: 20px !important; height: 20px !important; }
+    </style>
+    </head>
+<body>
+
+
+<!-- Loader -->
+<div class="loader" id="loader">
+  <div class="loader-icon">⚖️</div>
+  <div class="loader-bar"></div>
+</div>
+
+<!-- Consultation Banner -->
+<div class="consult-banner">
+  ⚖️ Kostenlose Erstgespraech — Wir helfen Ihnen weiter. <a href="tel:0341309210">Jetzt anrufen</a>
+</div>
+
+<!-- Nav -->
+<nav id="nav">
+  <div class="c">
+    <div class="ni">
+      <a href="#" class="nb"><span class="icon">⚖️</span> Wirtschaftsprüfer ·</a>
+      <div class="nr">
+        <a href="#rechtsgebiete">Fachgebiete</a>
+        <a href="#leistungen">Leistungen</a>
+        <a href="#kanzlei">Kanzlei</a>
+        <a href="#kontakt">Kontakt</a>
+        <a href="tel:0341309210" class="nav-cta">Erstgespraech</a>
+      </div>
+      <button class="mm-btn" onclick="document.querySelector('.mm').classList.toggle('open');document.querySelector('.mm-ov').classList.toggle('open')">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</nav>
+
+<!-- Mobile Menu -->
+<div class="mm-ov" onclick="this.classList.remove('open');document.querySelector('.mm').classList.remove('open')"></div>
+<div class="mm">
+  <a href="#rechtsgebiete" onclick="document.querySelector('.mm').classList.remove('open');document.querySelector('.mm-ov').classList.remove('open')">Fachgebiete</a>
+  <a href="#leistungen" onclick="document.querySelector('.mm').classList.remove('open');document.querySelector('.mm-ov').classList.remove('open')">Leistungen</a>
+  <a href="#kanzlei" onclick="document.querySelector('.mm').classList.remove('open');document.querySelector('.mm-ov').classList.remove('open')">Kanzlei</a>
+  <a href="#kontakt" onclick="document.querySelector('.mm').classList.remove('open');document.querySelector('.mm-ov').classList.remove('open')">Kontakt</a>
+  <a href="tel:0341309210" class="nav-cta" style="text-align:center;margin-top:auto">Erstgespraech anfragen</a>
+</div>
+
+<!-- Hero -->
+<section class="hero">
+
+  <div style="position:absolute;inset:50px;border:1px dashed var(--accent,#059669);border-radius:12px;animation:float3d 6s ease-in-out infinite;animation-delay:-3s;opacity:.5"></div>
+  <!-- Chart bars -->
+  <div style="position:absolute;bottom:90px;left:50%;transform:translateX(-50%);display:flex;gap:8px;align-items:flex-end;animation:float3d 5s ease-in-out infinite;animation-delay:-2s">
+    <div style="width:12px;height:40px;background:var(--accent,#059669);border-radius:3px;opacity:.3"></div>
+    <div style="width:12px;height:60px;background:var(--accent,#059669);border-radius:3px;opacity:.4"></div>
+    <div style="width:12px;height:50px;background:var(--accent,#059669);border-radius:3px;opacity:.35"></div>
+    <div style="width:12px;height:80px;background:var(--accent,#059669);border-radius:3px;opacity:.5"></div>
+    <div style="width:12px;height:70px;background:var(--accent,#059669);border-radius:3px;opacity:.45"></div>
+  </div>
+</div>
+
+  <div class="c">
+    <div class="hero-grid">
+      <div class="hero-content rv">
+        <div class="hero-badge">⚖️ Ihre Kanzlei in Leipzig</div>
+        <h1>Kompetente <em>Rechtsberatung</em> für Ihre Anliegen</h1>
+        <p class="hero-desc">Wir analysieren Ihre Situation präzise, beraten Sie klar und vertreten Ihre Interessen konsequent — außergerichtlich und vor Gericht. Schwerpunkte: Erbrecht, Testamentsgestaltung.</p>
+        <div class="hero-btns">
+          <a href="tel:0341309210" class="btn btn-p">⚖️ Erstgespraech anfragen</a>
+          <a href="#rechtsgebiete" class="btn btn-s">Fachgebiete →</a>
+        </div>
+        <div class="hero-trust">
+          <div class="hero-meta-item"><div class="hero-meta-val">4.9</div><div class="hero-meta-label">Google Rating</div></div><div class="hero-meta-item"><div class="hero-meta-val">47+</div><div class="hero-meta-label">Bewertungen</div></div><div class="hero-meta-item"><div class="hero-meta-val">Mo–Fr</div><div class="hero-meta-label">Geöffnet</div></div>
+        </div>
+      </div>
+
+      <div class="hero-visual rv rv-d2">
+        <!-- 3D Scales of Justice SVG -->
+        <div class="icon-3d">
+          <div class="icon-glow"></div>
+          <svg viewBox="0 0 200 240" fill="none" xmlns="http://www.w3.org/2000/svg" style="width:100%;height:100%;filter:drop-shadow(0 20px 40px rgba(184,134,11,.2))">
+            <!-- Pillar -->
+            <rect x="95" y="40" width="10" height="160" rx="5" fill="#1E293B"/>
+            <!-- Base -->
+            <rect x="60" y="190" width="80" height="12" rx="6" fill="#1E293B"/>
+            <rect x="70" y="200" width="60" height="8" rx="4" fill="#B8860B" opacity=".3"/>
+            <!-- Top ornament -->
+            <circle cx="100" cy="36" r="10" fill="#B8860B"/>
+            <circle cx="100" cy="36" r="6" fill="#D4A843"/>
+            <!-- Left beam -->
+            <line x1="100" y1="60" x2="30" y2="80" stroke="#1E293B" stroke-width="4" stroke-linecap="round">
+              <animateTransform attributeName="transform" type="rotate" values="0 100 60;-3 100 60;0 100 60;3 100 60;0 100 60" dur="5s" repeatCount="indefinite"/>
+            </line>
+            <!-- Right beam -->
+            <line x1="100" y1="60" x2="170" y2="80" stroke="#1E293B" stroke-width="4" stroke-linecap="round">
+              <animateTransform attributeName="transform" type="rotate" values="0 100 60;3 100 60;0 100 60;-3 100 60;0 100 60" dur="5s" repeatCount="indefinite"/>
+            </line>
+            <!-- Left pan -->
+            <path d="M10 85 Q30 75 50 85 L45 110 Q30 115 15 110 Z" fill="#B8860B" opacity=".7">
+              <animateTransform attributeName="transform" type="translate" values="0,0;-2,4;0,0;2,-4;0,0" dur="5s" repeatCount="indefinite"/>
+            </path>
+            <!-- Right pan -->
+            <path d="M150 85 Q170 75 190 85 L185 110 Q170 115 155 110 Z" fill="#B8860B" opacity=".7">
+              <animateTransform attributeName="transform" type="translate" values="0,0;2,-4;0,0;-2,4;0,0" dur="5s" repeatCount="indefinite"/>
+            </path>
+            <!-- Left chains -->
+            <line x1="15" y1="82" x2="28" y2="72" stroke="#B8860B" stroke-width="1.5" opacity=".5"><animateTransform attributeName="transform" type="translate" values="0,0;-2,4;0,0;2,-4;0,0" dur="5s" repeatCount="indefinite"/></line>
+            <line x1="45" y1="82" x2="32" y2="72" stroke="#B8860B" stroke-width="1.5" opacity=".5"><animateTransform attributeName="transform" type="translate" values="0,0;-2,4;0,0;2,-4;0,0" dur="5s" repeatCount="indefinite"/></line>
+            <!-- Right chains -->
+            <line x1="155" y1="82" x2="168" y2="72" stroke="#B8860B" stroke-width="1.5" opacity=".5"><animateTransform attributeName="transform" type="translate" values="0,0;2,-4;0,0;-2,4;0,0" dur="5s" repeatCount="indefinite"/></line>
+            <line x1="185" y1="82" x2="172" y2="72" stroke="#B8860B" stroke-width="1.5" opacity=".5"><animateTransform attributeName="transform" type="translate" values="0,0;2,-4;0,0;-2,4;0,0" dur="5s" repeatCount="indefinite"/></line>
+          </svg>
+        </div>
+
+        <!-- Floating Case Status Card -->
+        <div class="case-card">
+          <h4><span class="dot"></span> Mandantenportal</h4>
+          <div class="case-items">
+            <div class="case-item"><span class="label">Einkommensteuer</span><span class="status-badge status-active">In Bearbeitung</span></div>
+            <div class="case-item"><span class="label">Gewerbesteuer</span><span class="status-badge status-done">Abgeschlossen</span></div>
+            <div class="case-item"><span class="label">Umsatzsteuer</span><span class="status-badge tag-review">Prüfung</span></div>
+          </div>
+        </div>
+
+        <!-- Credential Float -->
+        <div class="cred-float">
+          <span class="icon">🏛️</span>
+          <div><strong>Zugelassen beim</strong><br><span style="font-size:.7rem;color:var(--tx2)">Amtsgericht Leipzig</span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Fachgebiete / Practice Areas -->
+<section id="rechtsgebiete" class="sec" style="background:var(--bg2)">
+  <div class="c">
+    <div class="sh rv">
+      <p class="sh-l">Fachgebiete</p>
+      <h2 class="sh-t">Unsere <em>Fachgebiete</em></h2>
+      <p class="sh-d">Kompetente Beratung in allen wichtigen Fachgebieten — persönlich und zielorientiert.</p>
+    </div>
+    <div class="areas-grid">
+      <div class="area-card rv rv-d1">
+        <div class="area-icon">⚖️</div>
+        <h3>Einkommensteuer</h3>
+        <p>Einkommensteuererklärung, Vorauszahlungen und Veranlagung — wir optimieren Ihre Steuerlast.</p>
+      </div>
+      <div class="area-card rv rv-d2">
+        <div class="area-icon">🏠</div>
+        <h3>Gewerbesteuer</h3>
+        <p>Mieterhöhung, Kündigung, Nebenkostenabrechnung — kompetente Beratung für Mieter und Vermieter.</p>
+      </div>
+      <div class="area-card rv rv-d3">
+        <div class="area-icon">📝</div>
+        <h3>Umsatzsteuer</h3>
+        <p>Umsatzsteuervoranmeldung, Vorsteuerabzug und EU-weite Regelungen — präzise und termingerecht.</p>
+      </div>
+      <div class="area-card rv rv-d4">
+        <div class="area-icon">👨‍👩‍👧</div>
+        <h3>Buchhaltung</h3>
+        <p>Finanzbuchhaltung, Kontenabstimmung und Belegmanagement — Ihre Zahlen immer im Blick.</p>
+      </div>
+      <div class="area-card rv rv-d1">
+        <div class="area-icon">🏢</div>
+        <h3>Lohnabrechnung</h3>
+        <p>Gehaltsabrechnung, Sozialversicherung und Meldewesen — zuverlässig und pünktlich.</p>
+      </div>
+      <div class="area-card rv rv-d2">
+        <div class="area-icon">🚗</div>
+        <h3>Jahresabschluss</h3>
+        <p>Bilanz, GuV und Anhang — professionelle Jahresabschlüsse für Ihr Unternehmen.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Leistungen / Services -->
+<section id="leistungen" class="sec">
+  <div class="c">
+    <div class="sh rv">
+      <p class="sh-l">Leistungen</p>
+      <h2 class="sh-t">Unsere <em>Beratung</em></h2>
+      <p class="sh-d">Professionelle rechtliche Unterstützung — von der Erstgespraech bis zur gerichtlichen Vertretung.</p>
+    </div>
+    <div class="svc-grid">
+      <div class="svc-card"><div class="svc-num">01</div><h3>Kostenlose Erstberatung</h3><p>In einem ersten Gespräch analysieren wir Ihren Fall und geben Ihnen eine ehrliche Einschätzung.</p><div class="svc-price">kostenlos</div></div><div class="svc-card"><div class="svc-num">02</div><h3>Erbrecht</h3><p>Testamente, Erbstreitigkeiten, Pflichtteil — wir sichern Ihr Erbe.</p><div class="svc-price">Erstberatung kostenlos</div></div><div class="svc-card"><div class="svc-num">03</div><h3>Testamentsgestaltung</h3><p>Kompetente Beratung und Vertretung im Testamentsgestaltung.</p><div class="svc-price">Erstberatung kostenlos</div></div><div class="svc-card"><div class="svc-num">04</div><h3>Erbstreitigkeiten</h3><p>Kompetente Beratung und Vertretung im Erbstreitigkeiten.</p><div class="svc-price">Erstberatung kostenlos</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- Client Portal Mockup -->
+<section class="portal-sec">
+  <div class="c">
+    <div class="portal-grid">
+      <div class="portal-text rv">
+        <p class="sh-l">Business Paket</p>
+        <h2>Ihr <em>Mandantenportal</em></h2>
+        <p>Behalten Sie den Überblick über alle Ihre Mandate, Dokumente und Termine — jederzeit und von überall zugänglich.</p>
+        <div class="portal-features">
+          <div class="pf-item"><span class="check">✓</span> Aktueller Status aller Mandate</div>
+          <div class="pf-item"><span class="check">✓</span> Sichere Dokumentenablage</div>
+          <div class="pf-item"><span class="check">✓</span> Terminverwaltung & Kalender</div>
+          <div class="pf-item"><span class="check">✓</span> Verschlüsselte Kommunikation</div>
+          <div class="pf-item"><span class="check">✓</span> Kostentransparenz in Echtzeit</div>
+        </div>
+      </div>
+
+      <div class="portal-mock rv rv-d2">
+        <div class="pm-topbar">
+          <span class="logo">⚖️ Wirtschaftsprüfer · Portal</span>
+          <span class="user"><span class="avatar">M</span> Max Mustermann</span>
+        </div>
+        <div class="pm-body">
+          <div class="pm-sidebar">
+            <div class="pm-nav">
+              <a class="active">📊 Übersicht</a>
+              <a>📁 Dokumente</a>
+              <a>📅 Termine</a>
+              <a>💬 Nachrichten</a>
+              <a>💰 Kosten</a>
+              <a>⚙️ Einstellungen</a>
+            </div>
+          </div>
+          <div class="pm-content">
+            <h3>Aktuelle Mandanten</h3>
+            <div class="pm-cases">
+              <div class="pm-case"><div class="info"><span class="name">Steuererklärung Firma Meyer</span><span class="meta">EkSt 2025 · seit 01.03.2026</span></div><span class="tag tag-progress">In Bearbeitung</span></div>
+              <div class="pm-case"><div class="info"><span class="name">Betriebsprüfung Schmidt GmbH</span><span class="meta">BP 2023-2025 · seit 15.01.2026</span></div><span class="tag tag-review">In Prüfung</span></div>
+              <div class="pm-case"><div class="info"><span class="name">Kaufvertrag Prüfung</span><span class="meta">Az. 2026/0091 · seit 01.04.2026</span></div><span class="tag tag-closed">Erledigt</span></div>
+            </div>
+            <div class="pm-stats">
+              <div class="pm-stat"><div class="num">3</div><div class="label">Aktuelle Mandanten</div></div>
+              <div class="pm-stat"><div class="num">12</div><div class="label">Dokumente</div></div>
+              <div class="pm-stat"><div class="num">2</div><div class="label">Nächste Termine</div></div>
+              <div class="pm-stat"><div class="num">98%</div><div class="label">Zufriedenheit</div></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Portal Purchase CTA — prospect (business owner) sees value and can buy -->
+<section class="portal-cta-sec" style="background:var(--navy,#0a1628);padding:60px 0;border-top:1px solid rgba(255,255,255,0.08);">
+  <div class="c" style="max-width:900px;margin:0 auto;padding:0 24px;text-align:center;">
+    <p style="font-size:12px;letter-spacing:2px;text-transform:uppercase;color:var(--gold-l,#c9a96e);margin-bottom:12px;font-weight:600;">Das ist Ihr System</p>
+    <h3 style="font-size:clamp(1.4rem,2.5vw,2rem);font-weight:700;color:#ffffff;margin-bottom:16px;line-height:1.3;">
+      Gefällt Ihnen was Sie sehen? <em style="font-style:italic;color:var(--gold-l,#c9a96e);">Jetzt übernehmen.</em>
+    </h3>
+    <p style="color:rgba(255,255,255,0.65);font-size:1rem;line-height:1.7;margin-bottom:32px;max-width:580px;margin-left:auto;margin-right:auto;">
+      Das ist der erste Entwurf — bei Übernahme wird alles exakt nach Ihren Wünschen angepasst. Kein Baukasten, keine monatlichen Kosten an Drittanbieter.
+    </p>
+    <div style="display:flex;flex-direction:column;align-items:center;gap:16px;">
+      <a href="https://wa.me/4915126186817" target="_blank" style="display:inline-block;background:linear-gradient(135deg,var(--gold-l,#c9a96e),var(--gold,#a07840));color:#0a0a0a;font-weight:700;font-size:1rem;padding:16px 40px;border-radius:100px;text-decoration:none;letter-spacing:0.3px;">
+        Jetzt System kaufen
+      </a>
+      <span style="font-size:13px;color:rgba(255,255,255,0.4);">Schreiben Sie uns direkt — wir antworten heute noch.</span>
+    </div>
+  </div>
+</section>
+
+
+<!-- About / Kanzlei -->
+<section id="kanzlei" class="sec">
+  <div class="c">
+    <div class="about-grid">
+      <div class="about-img rv">
+        <img src="https://images.unsplash.com/photo-1571772996211-2f02c9727629?w=800&h=600&fit=crop&q=80" alt="Wirtschaftsprüfer · Steuerberater · Rechtsanwälte Dr. Senger und Senger - Leipzig - Partnerschaft mbB">
+      </div>
+      <div class="about-text rv rv-d2">
+        <p class="sh-l">Über uns</p>
+        <h2>Ihre <em>Kanzlei</em> in Leipzig</h2>
+        <p>Unsere Kanzlei in Leipzig steht für kompetente Rechtsberatung mit persönlichem Engagement. Mit Schwerpunkt auf Erbrecht und Testamentsgestaltung begleiten wir unsere Mandanten durch alle Phasen des rechtlichen Verfahrens — von der ersten Beratung bis zum erfolgreichen Abschluss. Transparente Kommunikation, realistische Einschätzungen und konsequente Interessenvertretung sind unsere Grundsätze.</p>
+        <div class="about-stats">
+          <div class="about-stat"><b>4.9</b><span>Google Rating</span></div><div class="about-stat"><b>47+</b><span>Bewertungen</span></div><div class="about-stat"><b>Leipzig</b><span>Standort</span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Gallery -->
+<section class="sec" style="background:var(--bg2)">
+  <div class="c">
+    <div class="sh rv">
+      <p class="sh-l">Einblicke</p>
+      <h2 class="sh-t">Unsere <em>Kanzlei</em></h2>
+    </div>
+    <div class="gallery-bento">
+      <div class="gallery-item"><img src="https://images.unsplash.com/photo-1576091160550-2173dba999ef?w=600&h=400&fit=crop&q=80" loading="lazy" alt="Moderne Technik"><span class="gallery-caption">Moderne Technik</span></div><div class="gallery-item"><img src="https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?w=600&h=400&fit=crop&q=80" loading="lazy" alt="Unser Team"><span class="gallery-caption">Unser Team</span></div><div class="gallery-item"><img src="https://images.unsplash.com/photo-1551076805-e1869033e561?w=600&h=400&fit=crop&q=80" loading="lazy" alt="Wartezimmer"><span class="gallery-caption">Wartezimmer</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- Reviews -->
+<div class="reviews-grid" style="max-width:500px;margin:32px auto 0"><div class="rev-card" style="text-align:center"><div class="rev-stars" style="justify-content:center;font-size:1.1rem"><svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg><svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg><svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg><svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg></div><div style="font-size:2.4rem;font-weight:700;color:var(--navy-dark);margin:12px 0 4px;font-family:'Playfair Display',serif">4.9</div><p class="rev-text" style="margin-bottom:8px">Durchschnittliche Bewertung auf Google</p><div class="rev-author">&#9733; Google-Bewertungen · 47 Bewertungen</div></div></div>
+
+<!-- Contact -->
+<section id="kontakt" class="sec">
+  <div class="c">
+    <div class="sh rv">
+      <p class="sh-l">Kontakt</p>
+      <h2 class="sh-t">Nehmen Sie <em>Kontakt</em> auf</h2>
+    </div>
+    <div class="contact-grid">
+      <div class="contact-card rv">
+        <h3>Kontaktieren Sie uns</h3>
+        <a href="tel:0341309210" class="contact-btn contact-btn-primary"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg> Anrufen: 0341 309210</a><a href="https://wa.me/49341309210" class="contact-btn contact-btn-wa" target="_blank"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15a2 2 0 01-2 2H7l-4 4V5a2 2 0 012-2h14a2 2 0 012 2z"/></svg> WhatsApp</a><a href="mailto:ffm@senger-und-senger.de" class="contact-btn contact-btn-mail"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg> E-Mail senden</a>
+        <div class="ci">
+          <div class="ci-label">Adresse</div><div class="ci-val">Berliner Straße 38, Nuremberg</div><div class="ci-label">Öffnungszeiten</div><div class="ci-val">Mo–Do: 09:00–17:00 Uhr, Fr: 09:00–15:00 Uhr</div>
+        </div>
+      </div>
+      <div class="map-wrap rv rv-d2">
+        <iframe src="https://www.google.com/maps?q=Wirtschaftsprüfer+·+Steuerberater+·+Rechtsanwälte+Dr.+Senger+und+Senger+-+Leipzig+-+Partnerschaft+mbB+Leipzig&output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Standort"></iframe>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="cta-sec">
+  <div class="c">
+    <h2 class="rv">Kostenlose <em>Erstgespraech</em></h2>
+    <p class="rv rv-d1">Schildern Sie uns Ihr Anliegen — wir finden gemeinsam die beste Lösung.</p>
+    <a href="tel:0341309210" class="btn btn-p rv rv-d2">⚖️ Jetzt Erstgespraech vereinbaren</a>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer>
+  <div class="c">
+    <div class="ft-grid">
+      <div class="ft-col">
+        <div class="ft-brand"><span class="icon">⚖️</span> Wirtschaftsprüfer · Steuerberater · Rechtsanwälte Dr. Senger und Senger - Leipzig - Partnerschaft mbB</div>
+        <p>Wirtschaftsprüfer · — Ihre Steuerkanzlei in Leipzig.</p>
+      </div>
+      <div class="ft-col">
+        <h4>Fachgebiete</h4>
+        <a href="#rechtsgebiete">Einkommensteuer</a>
+        <a href="#rechtsgebiete">Gewerbesteuer</a>
+        <a href="#rechtsgebiete">Umsatzsteuer</a>
+        <a href="#rechtsgebiete">Buchhaltung</a>
+      </div>
+      <div class="ft-col">
+        <h4>Kontakt</h4>
+        <a href="tel:0341309210">0341 309210</a><a href="mailto:ffm@senger-und-senger.de">ffm@senger-und-senger.de</a><a>Leipzig</a>
+      </div>
+      <div class="ft-col">
+        <h4>Rechtliches</h4>
+        <a href="#">Impressum</a>
+        <a href="#">Datenschutz</a>
+        <a href="#">AGB</a>
+      </div>
+    </div>
+    <div class="ft-bottom">
+      <span>© 2026 Wirtschaftsprüfer · Steuerberater · Rechtsanwälte Dr. Senger und Senger - Leipzig - Partnerschaft mbB. Alle Rechte vorbehalten.</span>
+      <div class="ft-social">
+        <a href="https://www.google.com/maps/search/Wirtschaftsprüfer+·+Steuerberater+·+Rechtsanwälte+Dr.+Senger+und+Senger+-+Leipzig+-+Partnerschaft+mbB+Leipzig" target="_blank" title="Maps"><svg viewBox="0 0 24 24" width="14" height="14" stroke="currentColor" stroke-width="2" fill="none"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg></a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script>
+// Loader
+window.addEventListener('load',()=>{setTimeout(()=>{document.getElementById('loader').classList.add('done')},1200)});
+
+// Nav scroll
+const nav=document.getElementById('nav');
+window.addEventListener('scroll',()=>{nav.classList.toggle('sc',window.scrollY>60)});
+
+// Reveal on scroll
+const io=new IntersectionObserver(e=>{e.forEach(el=>{if(el.isIntersecting){el.target.classList.add('vis');io.unobserve(el.target)}})},{threshold:.15,rootMargin:'0px 0px -40px 0px'});
+document.querySelectorAll('.rv').forEach(el=>io.observe(el));
+
+// Smooth scroll for anchor links
+document.querySelectorAll('a[href^="#"]').forEach(a=>{a.addEventListener('click',e=>{e.preventDefault();const t=document.querySelector(a.getAttribute('href'));if(t)t.scrollIntoView({behavior:'smooth',block:'start'})})});
+</script>
+
+<!-- Scroll Reveal -->
+
+
+<!-- GSAP ScrollTrigger -->
+
+<script>
+gsap.registerPlugin(ScrollTrigger);
+gsap.utils.toArray("section, .svc-card, .gallery-item, .review-card, .about-grid, .contact-card, .portal-grid, .service-card, .team-card").forEach(function(el) {
+  gsap.fromTo(el,
+    { opacity: 0, y: 30 },
+    { opacity: 1, y: 0, duration: 0.8, ease: "power3.out",
+      scrollTrigger: { trigger: el, start: "top 90%", toggleActions: "play none none none" }
+    }
+  );
+});
+</script>
+</body>
+</html>
